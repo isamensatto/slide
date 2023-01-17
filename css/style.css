@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  /*tira o pixel q sobra em baixo de cada imagem */
+  display: block;
+  /*faz com q ele se adapte ao tamnho da tela do browser */
+  max-width: 100%;
+}
+
+.wrapper {
+  /*A propriedade overflow especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem, ou se ultrapassa o limite do elemento. O parâmetro hidden torna o texto invisível. */
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide li {
+  /* essa propriedade faz com q nao estoure o container e deixe uma imagem ao lado da outra */
+  flex-shrink: 0;
+  width: 90vw;
+  max-width: 800px;
+  margin: 0 20px;
+}
+
+.slide{
+    transform: translate3d(-500px,0px,0px);
+}
